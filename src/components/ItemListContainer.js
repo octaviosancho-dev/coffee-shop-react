@@ -6,7 +6,7 @@ const ItemListContainer = ({listado}) => {
     return (
         <Fragment>
             <h1 className="text-center">{listado}</h1>
-            <ItemCount/>
+            <ItemCount stock="5" initial="1"/>
         </Fragment>
     );
 }

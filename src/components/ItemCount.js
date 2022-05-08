@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 
 
-const ItemCount = () => {
+const ItemCount = ({stock, initial, onAdd}) => {
+    // Stock inicial igual a 5
 
-    // Stock provisorio
-    const stock = 5;
-
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(parseInt(initial));
     
     const decrementCount = () => {
-        if(count === 0) {
+        if(count === 1) {
             document.querySelector('#btnDecrement').classList.add('disabled');
             document.querySelector('#btnIncrement').classList.remove('disabled');
         } else {
@@ -19,7 +17,7 @@ const ItemCount = () => {
         }
     }
     const incrementCount = () => {
-        if (count === stock) {
+        if (count === parseInt(stock)) {
             document.querySelector('#btnIncrement').classList.add('disabled');
             document.querySelector('#btnDecrement').classList.remove('disabled');
             
