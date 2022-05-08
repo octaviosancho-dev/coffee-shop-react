@@ -3,7 +3,6 @@ import CartWidget from './CartWidget';
 
 import '../../src/assets/css/Navbar.css'
 
-
 const NavBar = () => {
   return (
     <div className="App">
