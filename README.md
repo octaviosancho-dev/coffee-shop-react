@@ -1,4 +1,4 @@
-# Aplicacion de Café
+# Coffee Shop (e-commerce)
 
 # Getting Started with Create React App
 

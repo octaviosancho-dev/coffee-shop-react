@@ -1,9 +1,8 @@
 * {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    font-weight: 700;
 }
-html {
+body {
     background-color: rgb(230, 230, 230);   
 }
 .logo {
@@ -13,8 +12,11 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background-color: rgb(230, 230, 230);
+    justify-items: start;
+    background-color: transparent;
     padding: 50px 10px;
+    margin: 0 auto;
+    width: 80vw;
 }
 .cards {
     display: flex;
@@ -36,7 +38,7 @@ html {
     width: 270px;
     height: 40px;
     margin: 10px;
-    background-color: rgb(139, 104, 51);
+    background-color: rgb(214, 160, 79);
     border-radius: 5px;
     transition: 0.25s;
 }
