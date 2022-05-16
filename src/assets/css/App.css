@@ -1,47 +1,67 @@
 * {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 body {
-    background-color: rgb(230, 230, 230);   
+  background-color: rgb(230, 230, 230);   
 }
 .logo {
-    width: 35px;
+  width: 35px;
 }
 .itemContainer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    justify-items: start;
-    background-color: transparent;
-    padding: 50px 10px;
-    margin: 0 auto;
-    width: 80vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-items: start;
+  background-color: transparent;
+  padding: 50px 10px;
+  margin: 0 auto;
+  width: 80vw;
 }
 .cards {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    border: none;
-    border-radius: 5px;
-    width: 300px;
-    margin: 15px;
-    background-color: rgb(245, 245, 245);
-    box-shadow: 4px 4px 10px rgba(92, 92, 92, 0.192);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  margin: 15px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 4px 4px 10px rgba(92, 92, 92, 0.192);
 }
 .cards > img{
-    width: 250px;
+  width: 250px;
 }
 .buttons {
-    border: none;
-    color: rgb(255, 255, 255);
-    width: 270px;
-    height: 40px;
-    margin: 10px;
-    background-color: rgb(214, 160, 79);
-    border-radius: 5px;
-    transition: 0.25s;
+  border: none;
+  color: rgb(255, 255, 255);
+  width: 270px;
+  height: 40px;
+  margin: 10px;
+  background-color: rgb(214, 160, 79);
+  border-radius: 5px;
+  transition: 0.25s;
 }
 .buttons:hover {
-    transform: scale(1.025,1.025);
+  transform: scale(1.025,1.025);
+}
+
+.box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 20px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 4px 4px 10px rgba(92, 92, 92, 0.192);
+}
+.box > div {
+  flex: 1 1 300px;
+  justify-content: flex-start;
+}
+.box > div > img {
+  width: 500px;
 }

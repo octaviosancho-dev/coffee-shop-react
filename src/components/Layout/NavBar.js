@@ -1,7 +1,7 @@
-import lattelogo from '../assets/img/lattelogo1.png'
+import lattelogo from '../../assets/img/lattelogo1.png'
 import CartWidget from './CartWidget';
 
-import '../../src/assets/css/App.css'
+import '../../assets/css/App.css'
 
 const NavBar = () => {
   return (
