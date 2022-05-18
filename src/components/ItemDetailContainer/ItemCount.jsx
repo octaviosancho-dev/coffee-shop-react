@@ -13,7 +13,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     
 
   return (
-    <div className="d-block w-100 mx-auto">
+    <div className="d-block w-75 mx-auto pt-5">
       <div className="d-flex flex-container flex-column justify-content-center align-items-center">
         <div className='my-2'>
           <button
@@ -31,7 +31,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
           </button>
         </div>
         <button
-          className="btn btn-sm btn-secondary m-3"
+          className="buttons-count"
           onClick={() => {onAdd(count)}}
           disabled={stock === 0 ? true : false}>
           Agregar al carrito

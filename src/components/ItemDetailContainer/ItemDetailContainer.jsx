@@ -1,8 +1,11 @@
 import React, { Fragment, useState, useEffect } from 'react';
+import { useParams } from 'react-router'
 import ItemDetail from './ItemDetail';
 import { prod } from '../prod';
 
 const ItemDetailContainer = () => {
+  
+  let { id } = useParams();
   
   const [item, setItem] = useState({});
 
@@ -10,11 +13,10 @@ const ItemDetailContainer = () => {
     const getItem = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(prod);
-      }, 2000);
+      }, 500);
     });
-    getItem.then( data => setItem(data[3])) //! En esta parte no logre pasar la info dinamicamente al apretar el boton de "Ver detalle"
-    getItem.then()
-  }, [])
+    getItem.then( data => setItem(data[id]))
+  }, [id])
   
   return(
     <Fragment>
