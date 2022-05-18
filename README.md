@@ -1,5 +1,5 @@
 # Coffee Shop (e-commerce)
 
-# Getting Started with Create React App
+Mi idea con este proyecto era crear un e-commerce orientado a la venta de café y productos relacionados, en el futuro desarrollaré la seccion de Home o inicio para que el mismo este mas completo.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En algunos de mis componentes utilicé clases de Bootstrap, pero por el momento no agregué más dependencias externas.
