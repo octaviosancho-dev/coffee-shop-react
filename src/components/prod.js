@@ -128,7 +128,7 @@ export const prod = [
   {
     id: 12,
     title: 'Cápsulas Colombia',
-    price: 1.5,
+    price: 1.50,
     image: CapsulaColombia,
     stock: 220,
     description: 'Cápsulas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non lorem orci. Integer hendrerit eget erat sed aliquam. Aliquam et aliquam justo. Vestibulum rhoncus neque turpis, at lacinia dolor vestibulum vitae. Sed iaculis augue non porttitor porttitor. Vivamus et interdum justo, a tristique urna. Curabitur at ante id lorem posuere aliquet. Duis interdum nunc sit amet sapien ultrices ultrices. Praesent luctus ullamcorper congue. Proin ac blandit diam. Suspendisse potenti.',
@@ -137,7 +137,7 @@ export const prod = [
   {
     id: 13,
     title: 'Cápsulas Ethiopia',
-    price: 1.5,
+    price: 1.50,
     image: CapsulaEthiopia,
     stock: 210,
     description: 'Cápsulas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non lorem orci. Integer hendrerit eget erat sed aliquam. Aliquam et aliquam justo. Vestibulum rhoncus neque turpis, at lacinia dolor vestibulum vitae. Sed iaculis augue non porttitor porttitor. Vivamus et interdum justo, a tristique urna. Curabitur at ante id lorem posuere aliquet. Duis interdum nunc sit amet sapien ultrices ultrices. Praesent luctus ullamcorper congue. Proin ac blandit diam. Suspendisse potenti.',
@@ -146,7 +146,7 @@ export const prod = [
   {
     id: 14,
     title: 'Cápsulas India',
-    price: 1.5,
+    price: 1.50,
     image: CapsulaIndia,
     stock: 113,
     description: 'Cápsulas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non lorem orci. Integer hendrerit eget erat sed aliquam. Aliquam et aliquam justo. Vestibulum rhoncus neque turpis, at lacinia dolor vestibulum vitae. Sed iaculis augue non porttitor porttitor. Vivamus et interdum justo, a tristique urna. Curabitur at ante id lorem posuere aliquet. Duis interdum nunc sit amet sapien ultrices ultrices. Praesent luctus ullamcorper congue. Proin ac blandit diam. Suspendisse potenti.',
@@ -155,7 +155,7 @@ export const prod = [
   {
     id: 15,
     title: 'Cápsulas Indonesia',
-    price: 1.5,
+    price: 1.50,
     image: CapsulaIndonesia,
     stock: 230,
     description: 'Cápsulas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non lorem orci. Integer hendrerit eget erat sed aliquam. Aliquam et aliquam justo. Vestibulum rhoncus neque turpis, at lacinia dolor vestibulum vitae. Sed iaculis augue non porttitor porttitor. Vivamus et interdum justo, a tristique urna. Curabitur at ante id lorem posuere aliquet. Duis interdum nunc sit amet sapien ultrices ultrices. Praesent luctus ullamcorper congue. Proin ac blandit diam. Suspendisse potenti.',
@@ -164,7 +164,7 @@ export const prod = [
   {
     id: 16,
     title: 'Cápsulas Nicaragua',
-    price: 1.5,
+    price: 1.50,
     image: CapsulaNicaragua,
     stock: 330,
     description: 'Cápsulas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non lorem orci. Integer hendrerit eget erat sed aliquam. Aliquam et aliquam justo. Vestibulum rhoncus neque turpis, at lacinia dolor vestibulum vitae. Sed iaculis augue non porttitor porttitor. Vivamus et interdum justo, a tristique urna. Curabitur at ante id lorem posuere aliquet. Duis interdum nunc sit amet sapien ultrices ultrices. Praesent luctus ullamcorper congue. Proin ac blandit diam. Suspendisse potenti.',

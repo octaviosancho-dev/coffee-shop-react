@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import ItemCount from './ItemCount';
 import { Link } from 'react-router-dom';
 
@@ -6,8 +6,12 @@ const ItemDetail = ({item}) => {
 
   const {description, image, price, title, stock} = item;
 
-  const onAdd = (count) => {
-    alert(`Agregaste ${count} productos`);
+  const [quantity, setQuantity] = useState(0);
+
+  const onAdd = count => {
+    //alert(`Agregaste ${count} productos`);
+    setQuantity(count);
+    console.log(count);
   }
 
   return(
