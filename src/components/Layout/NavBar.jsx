@@ -21,14 +21,14 @@ const NavBar = () => {
                 Categorías
                 </button>
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><Link to='/categorias/cafe' className="dropdown-item" href="#">Café</Link></li>
+                  <li><Link to='/categorias/cafes' className="dropdown-item" href="#">Café</Link></li>
                   <li><Link to='/categorias/maquinas' className="dropdown-item" href="#">Máquinas</Link></li>
                   <li><Link to='/categorias/capsulas' className="dropdown-item" href="#">Cápsulas</Link></li>
                 </ul>
               </div>
             </ul>
           </div>
-          <a href="index.html" className="text-decoration-none m-3"><CartWidget/></a>
+          <Link to='/' className="text-decoration-none m-3"><CartWidget/></Link>
         </nav>
     </div>
   );  

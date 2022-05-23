@@ -24,7 +24,7 @@ export const prod = [
     image: CoffeeClassic250,
     stock: 10,
     description: 'Café de Grano 250g Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non lorem orci. Integer hendrerit eget erat sed aliquam. Aliquam et aliquam justo. Vestibulum rhoncus neque turpis, at lacinia dolor vestibulum vitae. Sed iaculis augue non porttitor porttitor. Vivamus et interdum justo, a tristique urna. Curabitur at ante id lorem posuere aliquet. Duis interdum nunc sit amet sapien ultrices ultrices. Praesent luctus ullamcorper congue. Proin ac blandit diam. Suspendisse potenti.',
-    category: 'cafe'
+    category: 'cafes'
   },
   {
     id: 1,
@@ -33,7 +33,7 @@ export const prod = [
     image: CoffeeClassic500,
     stock: 5,
     description: 'Café de Grano 500g Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non lorem orci. Integer hendrerit eget erat sed aliquam. Aliquam et aliquam justo. Vestibulum rhoncus neque turpis, at lacinia dolor vestibulum vitae. Sed iaculis augue non porttitor porttitor. Vivamus et interdum justo, a tristique urna. Curabitur at ante id lorem posuere aliquet. Duis interdum nunc sit amet sapien ultrices ultrices. Praesent luctus ullamcorper congue. Proin ac blandit diam. Suspendisse potenti.',
-    category: 'cafe'
+    category: 'cafes'
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const prod = [
     image: CoffeePremium250,
     stock: 8,
     description: 'Café Premium 250g Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non lorem orci. Integer hendrerit eget erat sed aliquam. Aliquam et aliquam justo. Vestibulum rhoncus neque turpis, at lacinia dolor vestibulum vitae. Sed iaculis augue non porttitor porttitor. Vivamus et interdum justo, a tristique urna. Curabitur at ante id lorem posuere aliquet. Duis interdum nunc sit amet sapien ultrices ultrices. Praesent luctus ullamcorper congue. Proin ac blandit diam. Suspendisse potenti.',
-    category: 'cafe'
+    category: 'cafes'
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ export const prod = [
     image: CoffeePremium500,
     stock: 3,
     description: 'Café Premium 500g Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non lorem orci. Integer hendrerit eget erat sed aliquam. Aliquam et aliquam justo. Vestibulum rhoncus neque turpis, at lacinia dolor vestibulum vitae. Sed iaculis augue non porttitor porttitor. Vivamus et interdum justo, a tristique urna. Curabitur at ante id lorem posuere aliquet. Duis interdum nunc sit amet sapien ultrices ultrices. Praesent luctus ullamcorper congue. Proin ac blandit diam. Suspendisse potenti.',
-    category: 'cafe'
+    category: 'cafes'
   },
   {
     id: 4,
