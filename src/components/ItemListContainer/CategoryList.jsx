@@ -1,17 +1,13 @@
 import React from 'react';
 import Item from './Item';
 import { Link } from 'react-router-dom';
-import { useParams } from 'react-router';
 
-
-const CategoryList = ({items}) => {
-  let { categoryid } = useParams();
-  
+const CategoryList = ({items, categoryid}) => {
   return(
     <div className='itemContainer'>
-      {items.filter( item => {
-        return(
-          item.category === categoryid ? (
+      {items.map( item => {
+        if(item.category === categoryid) {
+          return(
             <div key={item.id}>
               <Link
                 to={`/item/${item.id}`}
@@ -20,8 +16,8 @@ const CategoryList = ({items}) => {
                 <Item key={item.id} item={item}/>
               </Link>
             </div>
-          ) : null
-        )
+          )
+        }
       })}
     </div>
   )

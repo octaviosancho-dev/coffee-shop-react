@@ -1,10 +1,12 @@
 import React, {Fragment, useState, useEffect } from 'react';
+import { useParams } from 'react-router';
 import ItemList from './ItemList';
 import CategoryList from './CategoryList';
 import { prod } from '../prod';
 
 const ItemListContainer = () => {
-
+  let { categoryid } = useParams();
+  
   const [items, setItems] = useState([]);
 
   useEffect( () => {
@@ -19,8 +21,7 @@ const ItemListContainer = () => {
 
   return (
     <Fragment>
-      <ItemList items={items}/>
-      <CategoryList items={items}/>
+      {categoryid ? (<CategoryList items={items} categoryid={categoryid}/>) : (<ItemList items={items}/>)}
     </Fragment>
   );
 }
