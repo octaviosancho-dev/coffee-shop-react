@@ -1,4 +1,7 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useContext } from 'react';
+// Items Context
+import { ItemsContext } from '../Context/CartContext';
+
 import ItemCount from './ItemCount';
 import { Link } from 'react-router-dom';
 
@@ -8,10 +11,12 @@ const ItemDetail = ({item}) => {
 
   const [quantity, setQuantity] = useState(0);
 
+  const [items, setItems, addItem] = useContext(ItemsContext);
+  
+
   const onAdd = count => {
     //alert(`Agregaste ${count} productos`);
     setQuantity(count);
-    console.log(count);
   }
 
   return(
@@ -31,7 +36,11 @@ const ItemDetail = ({item}) => {
                 <p className='text-muted p-2 my-4'>Solo quedan {stock} unidades!</p>
               </div>
               <div className='d-flex flex-row nowrap gap-2 justify-content-around align-items-end'>
-                <button className='buttons mt-3 w-75'>Comprar</button>
+                <button
+                  className='buttons mt-3 w-75'
+                  onClick={() => addItem(item, quantity) }
+                  >Comprar
+                </button>
                 <div>
                   {quantity === 0 ? 
                   (<ItemCount
