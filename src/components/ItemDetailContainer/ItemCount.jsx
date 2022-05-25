@@ -30,14 +30,16 @@ const ItemCount = ({stock, initial, onAdd}) => {
             +
           </button>
         </div>
-        <Link to='/cart'>
+
+        <div>
+          {}
+        </div>
           <button
             className="buttons-count"
             onClick={() => {onAdd(count)}}
-            disabled={stock === 0 ? true : false}>
+            disabled={stock === 0 || count === 0 ? true : false}>
             Agregar al carrito
           </button>
-        </Link>
       </div>
     </div>
   );

@@ -32,11 +32,14 @@ const ItemDetail = ({item}) => {
               </div>
               <div className='d-flex flex-row nowrap gap-2 justify-content-around align-items-end'>
                 <button className='buttons mt-3 w-75'>Comprar</button>
-                <ItemCount
-                  stock={stock}
-                  onAdd={onAdd}
-                  initial={0}
-                />
+                <div>
+                  {quantity === 0 ? 
+                  (<ItemCount
+                    stock={stock}
+                    onAdd={onAdd}
+                    initial={0}
+                  />) : <Link to='/cart'><button type='button' className='buttons-count'>Finalizar Compra</button></Link>}
+                </div>
               </div>
             </div>
           </div>
