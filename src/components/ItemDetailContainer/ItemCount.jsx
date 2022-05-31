@@ -12,7 +12,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     
 
   return (
-    <div className="d-block w-75 mx-auto pt-5">
+    <div className="d-block w-100 mx-auto pt-5">
       <div className="d-flex flex-container flex-column justify-content-center align-items-center">
         <div className='my-2'>
           <button
@@ -29,9 +29,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
             +
           </button>
         </div>
-
         <div>
-          {}
         </div>
           <button
             className="buttons-count"

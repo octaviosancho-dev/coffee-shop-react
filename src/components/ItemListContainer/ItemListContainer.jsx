@@ -20,12 +20,13 @@ const ItemListContainer = () => {
         } else {
           resolve(filteredProducts);
         }
-      }, 2000);
+      }, 1000);
     });
   }
 
   useEffect( () => {
     setLoading(true);
+
     consumeData(categoryid)
       .then( data => setItems(data))
       .catch( err => console.log(err));
