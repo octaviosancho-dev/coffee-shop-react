@@ -1,5 +1,5 @@
 import lattelogo from '../../assets/img/lattelogo1.png'
-import CartWidget from './CartWidget';
+import CartWidget from '../Cart/CartWidget';
 import { Link } from 'react-router-dom'
 
 
@@ -28,7 +28,7 @@ const NavBar = () => {
               </div>
             </ul>
           </div>
-          <Link to='/' className="text-decoration-none m-3"><CartWidget/></Link>
+          <CartWidget/>
         </nav>
     </div>
   );  

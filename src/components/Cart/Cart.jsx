@@ -1,25 +1,34 @@
-import React , { Fragment, useContext } from 'react';
+import React , { Fragment, useState, useContext } from 'react';
 import { ItemsContext } from '../Context/CartContext';
 import cartMug from '../../../src/assets/img/cart-mug.png'
 import { Link } from 'react-router-dom';
+import Spinner from '../Layout/Spinner';
 
 const Cart = () => {
 
+  const [loading, setLoading] = useState(true);
+
   const {items, removeItem} = useContext(ItemsContext);
+
+  setTimeout(() => {
+    setLoading(false);
+  }, 1500);
 
   let acum = 0;
 
   return (
     <Fragment>
-      <div className='itemContainer'>
+      {loading ? (<Spinner/>) : <div className='itemContainer justify-content-start'>
+        <div><h1>Su Compra:</h1></div>
         <div className='boxCart'>
           {items.length !== 0 ?
-          <div>
+          <div className='cartList'>
             {items.map( item => {
               const pricePerProduct = item.price * item.quantity;
               acum = acum + pricePerProduct;
               return(
-                <section key={item.id} className='boxCart--item'>
+              <div key={item.id}>
+                <section className='boxCart--item'>
                   <div>
                     {item.title}
                   </div>
@@ -32,12 +41,15 @@ const Cart = () => {
                   <div>
                     <button
                     type='button'
-                    className='btn btn-danger'
+                    className='btn btn-danger btn-sm'
                     onClick={() => removeItem(item.id)}
                     >X
                     </button>
                   </div>
                 </section>
+                <div className='cartDivider'></div>
+              </div>
+                
               )
             })}
           </div> :
@@ -51,8 +63,7 @@ const Cart = () => {
           <img src={cartMug} alt="cart" style={{width: '5vw', maxWidth: '125px'}}/>
           <h1 className='m-0 fs-3'>Total: $ {acum}</h1>
         </div> : null}
-        
-      </div>
+      </div>}
     </Fragment>
   );
 }
