@@ -1,8 +1,12 @@
+import React, { useState, useEffect } from 'react';
+// Components
 import NavBar from './components/Layout/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart'
+// Routing
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// Context
 import { ItemsProvider } from './components/Context/CartContext';
 
 

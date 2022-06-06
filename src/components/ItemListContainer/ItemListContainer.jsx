@@ -1,8 +1,11 @@
 import React, {Fragment, useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import ItemList from './ItemList';
-import { prod } from '../prod';
 import Spinner from '../Layout/Spinner';
+
+// Firebase - Firestore
+import { collection, query, getDocs } from 'firebase/firestore';
+import { db } from '../../firebase/firebaseConfig';
 
 const ItemListContainer = () => {
   let { categoryid } = useParams();
@@ -10,30 +13,36 @@ const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const consumeData = category => {
-    return new Promise((resolve, reject) => {
-      const filteredProducts = prod.filter( prod => prod.category === category);
-
-      setTimeout(() => {
-        if(categoryid === undefined) {
-          resolve(prod);
-        } else {
-          resolve(filteredProducts);
-        }
-      }, 1000);
-    });
-  }
+  
 
   useEffect( () => {
-    setLoading(true);
 
-    consumeData(categoryid)
-      .then( data => setItems(data))
-      .catch( err => console.log(err));
+    const getData = async category => {
+
+      const q = query(collection(db, 'products'));
+      const docs = [];
+      const querySnapshot = await getDocs(q);
+      
+      querySnapshot.forEach((doc) => {
+        docs.push({ ...doc.data(), id: doc.id });
+      });
+
+      const filteredProducts = docs.filter( doc => doc.category === category);
+
+      if(categoryid === undefined) {
+        setItems(docs);
+      } else {
+        setItems(filteredProducts);
+      }
+
+      setTimeout(() => {
+        setLoading(false)
+      }, 1000);
+    }
+
+    getData(categoryid);
   }, [categoryid]);
 
-  consumeData(categoryid)
-    .then(() => setLoading(false));
 
   return (
     <Fragment>
