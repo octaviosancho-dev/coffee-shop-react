@@ -1,8 +1,8 @@
 import React , { Fragment, useState, useContext } from 'react';
 import { ItemsContext } from '../Context/CartContext';
-import cartMug from '../../../src/assets/img/cart-mug.png'
-import { Link } from 'react-router-dom';
+import cartMug from '../../../src/assets/img/cart-mug.png';
 import Spinner from '../Layout/Spinner';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 
@@ -66,6 +66,6 @@ const Cart = () => {
       </div>}
     </Fragment>
   );
-}
+};
 
 export default Cart;

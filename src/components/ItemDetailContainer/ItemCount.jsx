@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 
-
-
 const ItemCount = ({stock, initial, onAdd}) => {
 
   const [count, setCount] = useState(initial);
 
   const addProduct = num => {
     setCount(count + num);
-  }
+  };
     
-
   return (
     <div className="d-block w-100 mx-auto pt-5">
       <div className="d-flex flex-container flex-column justify-content-center align-items-center">
@@ -40,6 +37,6 @@ const ItemCount = ({stock, initial, onAdd}) => {
       </div>
     </div>
   );
-}
+};
 
 export default ItemCount;

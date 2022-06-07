@@ -13,12 +13,9 @@ const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  
-
   useEffect( () => {
 
     const getData = async category => {
-
       const q = query(collection(db, 'products'));
       const docs = [];
       const querySnapshot = await getDocs(q);
@@ -36,11 +33,12 @@ const ItemListContainer = () => {
       }
 
       setTimeout(() => {
-        setLoading(false)
+        setLoading(false);
       }, 1000);
-    }
+    };
 
     getData(categoryid);
+
   }, [categoryid]);
 
 
@@ -49,6 +47,6 @@ const ItemListContainer = () => {
       {loading ? <Spinner/> : <ItemList items={items}/>}
     </Fragment>
   );
-}
+};
 
 export default ItemListContainer

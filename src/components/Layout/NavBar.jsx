@@ -1,9 +1,7 @@
-import lattelogo from '../../assets/img/lattelogo1.png'
+import lattelogo from '../../assets/img/lattelogo1.png';
 import CartWidget from '../Cart/CartWidget';
-import { Link } from 'react-router-dom'
-
-
-import '../../assets/css/App.css'
+import { Link } from 'react-router-dom';
+import '../../assets/css/App.css';
 
 const NavBar = () => {
   return (
@@ -32,6 +30,6 @@ const NavBar = () => {
         </nav>
     </div>
   );  
-}
+};
 
 export default NavBar;

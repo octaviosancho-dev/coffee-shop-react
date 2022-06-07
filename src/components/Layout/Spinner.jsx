@@ -11,6 +11,6 @@ const Spinner = () => {
       <div className="sk-chase-dot"></div>
     </div>
   );
-}
- 
+};
+
 export default Spinner;

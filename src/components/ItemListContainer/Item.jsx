@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Item = ({item}) => {
   const {title, price, image} = item;
     
@@ -17,6 +16,6 @@ const Item = ({item}) => {
       </button>
     </div>
   );
-}
+};
 
 export default Item;

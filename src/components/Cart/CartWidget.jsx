@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import CartIcon from '../../assets/img/cart-icon.png'
-import { Link } from 'react-router-dom';
 import { ItemsContext } from '../Context/CartContext';
+import CartIcon from '../../assets/img/cart-icon.png';
+import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
 
@@ -11,7 +11,7 @@ const CartWidget = () => {
     return item.quantity;
   }).reduce( (init, current) => {
     return init + current;
-  },0)
+  },0);
 
   return(
     <Link to='/cart'>
@@ -22,6 +22,6 @@ const CartWidget = () => {
       </>}
     </Link>
   );
-}
+};
 
 export default CartWidget;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 // Components
 import NavBar from './components/Layout/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -26,6 +26,6 @@ function App() {
     </BrowserRouter>
   </ItemsProvider>
   );
-}
+};
 
 export default App;
