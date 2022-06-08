@@ -14,6 +14,7 @@ const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect( () => {
+    setLoading(true);
 
     const getData = async category => {
       const q = query(collection(db, 'products'));

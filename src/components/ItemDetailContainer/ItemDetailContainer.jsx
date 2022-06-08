@@ -4,7 +4,7 @@ import ItemDetail from './ItemDetail';
 import Spinner from '../Layout/Spinner';
 
 // Firebase - Firestore
-import { collection, query, getDocs } from 'firebase/firestore';
+import { collection, query, getDocs, where } from 'firebase/firestore';
 import { db } from '../../firebase/firebaseConfig';
 
 const ItemDetailContainer = () => {
@@ -17,16 +17,15 @@ const ItemDetailContainer = () => {
   useEffect( () => {
 
     const getItem = async (idParam) => {
-      const q = query(collection(db, 'products'));
+      const q = query(collection(db, 'products'), where('id', '==', parseInt(idParam)));
       const docs = [];
       const querySnapshot = await getDocs(q);
 
       querySnapshot.forEach((doc) => {
         docs.push({ ...doc.data(), id: doc.id });
       });
-
-      const item = docs.filter( doc => doc.id === idParam);
-      setItem(item[0]);
+      
+      setItem(docs[0]);
     }
 
     getItem(id);
