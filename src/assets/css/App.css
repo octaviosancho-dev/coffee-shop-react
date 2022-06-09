@@ -202,3 +202,69 @@ body {
   height: 1px;
   margin: 0 auto;
 }
+
+.boxOrder {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 20px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 4px 4px 10px rgba(92, 92, 92, 0.192);
+  width: 50%;
+  min-width: 250px;
+  min-height: 500px;
+}
+.boxOrder > h5 {
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.orderForm {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+.orderForm > input {
+  border: none;
+  background-color: rgb(224, 224, 224);
+  height: 40px;
+  width: 20vw;
+  min-width: 150px;
+  margin: 7px;
+  border-radius: 5px;
+  padding: 10px;
+  align-self: center;
+}
+.orderForm > button {
+  background-color: #198754;
+  margin-top: 50px;
+  width: 15vw;
+  min-width: 100px;
+}
+.successContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.successMsg {
+  background-color: #1987542d;
+  color: #247a52;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.successMsg > h5 {
+  font-size: 15px;
+  font-weight: 700;
+}
+.cartButton {
+  max-width: 75vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}

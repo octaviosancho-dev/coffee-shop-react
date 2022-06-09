@@ -29,7 +29,7 @@ const ItemDetail = ({item}) => {
             <p>{description}</p>
             <div className='d-flex flex-row align-items-center justify-content-around'>
               <h2 className='alert-success p-2 w-25 text-center border border-0 rounded my-4 text-nowrap' style={{minWidth: 100}}>$ {price}</h2>
-              <p className='text-muted p-2 my-4'>Solo quedan {stock} unidades!</p>
+              <p className='text-muted p-2 my-4'>Quedan {stock} unidades!</p>
             </div>
             <div className='d-flex flex-row nowrap gap-2 justify-content-center align-items-end'>
               <Link className={ isInCart(id) ? ('') : ('w-100') } to='/cart'>

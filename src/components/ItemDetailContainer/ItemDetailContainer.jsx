@@ -4,7 +4,7 @@ import ItemDetail from './ItemDetail';
 import Spinner from '../Layout/Spinner';
 
 // Firebase - Firestore
-import { collection, query, getDocs, where } from 'firebase/firestore';
+import { collection, query, getDocs, where, documentId } from 'firebase/firestore';
 import { db } from '../../firebase/firebaseConfig';
 
 const ItemDetailContainer = () => {
@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
   useEffect( () => {
 
     const getItem = async (idParam) => {
-      const q = query(collection(db, 'products'), where('id', '==', parseInt(idParam)));
+      const q = query(collection(db, 'products'), where('id', '==', parseInt(idParam))); //td documentId()
       const docs = [];
       const querySnapshot = await getDocs(q);
 
