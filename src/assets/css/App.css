@@ -202,7 +202,16 @@ body {
   height: 1px;
   margin: 0 auto;
 }
-
+.orderContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-items: center;
+  background-color: transparent;
+  padding: 50px 10px;
+  margin: 0 auto;
+  max-width: 80vw;
+}
 .boxOrder {
   display: flex;
   flex-flow: column wrap;
@@ -214,7 +223,7 @@ body {
   padding: 20px;
   background-color: rgb(245, 245, 245);
   box-shadow: 4px 4px 10px rgba(92, 92, 92, 0.192);
-  width: 50%;
+  width: 35%;
   min-width: 250px;
   min-height: 500px;
 }
@@ -242,11 +251,17 @@ body {
 }
 .orderForm > button {
   background-color: #198754;
-  margin-top: 50px;
+  margin-top: 40px;
   width: 15vw;
   min-width: 100px;
 }
-.successContainer {
+.orderForm > button:disabled {
+  background-color: #93b3a4;
+}
+.orderForm > button:disabled:hover {
+  transform: scale(1,1);
+}
+.msgContainer {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -261,6 +276,19 @@ body {
 .successMsg > h5 {
   font-size: 15px;
   font-weight: 700;
+  text-align: center;
+}
+.errorMsg {
+  background-color: #8719192d;
+  color: #7a2424;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.errorMsg > h5 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
 }
 .cartButton {
   max-width: 75vw;

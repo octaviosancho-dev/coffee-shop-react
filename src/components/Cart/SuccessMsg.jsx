@@ -3,7 +3,7 @@ import Check from '../../assets/svg/success-check.svg';
 
 const SuccessMsg = ({orderID}) => {
   return (
-    <div className='successContainer'>
+    <div className='msgContainer'>
       <div className='successMsg'>
         <h5>Gracias por su compra! Su número de Orden es: {orderID}</h5>
       </div>
