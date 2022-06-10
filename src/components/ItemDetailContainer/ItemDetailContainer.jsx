@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
   useEffect( () => {
 
     const getItem = async (idParam) => {
-      const q = query(collection(db, 'products'), where('id', '==', parseInt(idParam))); //td documentId()
+      const q = query(collection(db, 'items'), where(documentId(), '==', idParam));
       const docs = [];
       const querySnapshot = await getDocs(q);
 

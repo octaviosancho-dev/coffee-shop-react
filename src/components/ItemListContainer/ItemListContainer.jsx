@@ -17,7 +17,7 @@ const ItemListContainer = () => {
     setLoading(true);
 
     const getData = async category => {
-      const q = query(collection(db, 'products'));
+      const q = query(collection(db, 'items'));
       const docs = [];
       const querySnapshot = await getDocs(q);
       
