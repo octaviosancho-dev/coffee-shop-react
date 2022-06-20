@@ -14,10 +14,10 @@ const CartWidget = () => {
   },0);
 
   return(
-    <Link to='/cart'>
+    <Link to='/cart' className='cart-container'>
       {items.length === 0 ? null : 
       <>
-        <img src={CartIcon} alt="cart-icon" className='logo'/>
+        <img src={CartIcon} alt="cart-icon" className='cart'/>
         <div className='logo--counter'><p>{totalItems}</p></div>
       </>}
     </Link>

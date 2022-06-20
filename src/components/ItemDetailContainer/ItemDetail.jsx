@@ -18,13 +18,12 @@ const ItemDetail = ({item}) => {
 
   return(
     <Fragment>
-      <Link to='/shop'><button className='btn btn-outline-secondary m-3'>Volver a la Tienda</button></Link>
       <div className='itemContainer w-75 mx-auto'>
         <div className='box'>
-          <div>
-            <img src={image} alt='product-coffee' className="img-fluid"/>
-          </div>
-          <div>
+          
+            <img src={image} alt='product-coffee' className="img-fluid img-mobile"/>
+          
+          <div className='detail-mobile'>
             <h1 className="my-5">{title}</h1>
             <p>{description}</p>
             <div className='d-flex flex-row align-items-center justify-content-around'>
@@ -32,9 +31,9 @@ const ItemDetail = ({item}) => {
               <p className='text-muted p-2 my-4'>Quedan {stock} unidades!</p>
             </div>
             <div className='d-flex flex-row nowrap gap-2 justify-content-center align-items-end'>
-              <Link className={ isInCart(id) ? ('') : ('w-100') } to='/cart'>
+              <Link className={ isInCart(id) ? ('') : ('d-flex justify-content-center text-decoration-none') } to='/cart'>
                 {isInCart(id) ? <></> : (<button
-                  className='buttons mt-3 w-100'
+                  className='buttons mt-3'
                   onClick={() => addItem(item, 1) } 
                   >Comprar
                 </button>)}
@@ -44,9 +43,9 @@ const ItemDetail = ({item}) => {
                 (<ItemCount
                   stock={stock}
                   onAdd={onAdd}
-                  onClick={() => addItem(item, quantity) }
+                  item={item}
                   initial={0}
-                />) : (<Link to='/cart'><button type='button' className='buttons-count' style={{backgroundColor: '#0f5132'}} onClick={() => addItem(item, quantity)}>Finalizar Compra</button></Link>)}
+                />) : (<Link to='/cart'><button type='button' className='buttons-count' style={{backgroundColor: '#0f5132'}}>Finalizar Compra</button></Link>)}
               </div>
             </div>
           </div>

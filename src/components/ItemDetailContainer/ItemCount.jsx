@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { ItemsContext } from '../Context/CartContext';
 
-const ItemCount = ({stock, initial, onAdd}) => {
+const ItemCount = ({stock, initial, onAdd, item}) => {
+
+  const {addItem} = useContext(ItemsContext);
 
   const [count, setCount] = useState(initial);
 
@@ -30,7 +33,11 @@ const ItemCount = ({stock, initial, onAdd}) => {
         </div>
           <button
             className="buttons-count"
-            onClick={() => {onAdd(count)}}
+            onClick={() => {
+              onAdd(count)
+              addItem(item, count)
+            }}
+            
             disabled={stock === 0 || count === 0 ? true : false}>
             Agregar al carrito
           </button>

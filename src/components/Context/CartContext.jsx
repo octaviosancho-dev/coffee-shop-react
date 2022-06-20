@@ -6,19 +6,13 @@ export const ItemsProvider = ({children}) => {
   const [items, setItems] = useState([]);
 
   const addItem = (item, quantity) => {
-    const inCart = items.find( itemIn => itemIn.id === item.id);
-
-    if(inCart) {
-      setItems(
-        items.map( itemIn => {
-          if(itemIn.id === item.id) {
-            return { ...inCart, quantity: inCart.quantity + quantity};
-          }
-        })
-      )
+    if(isInCart(item.id)) {
+      const index = items.findIndex( e => e.id === item.id);
+      items[index].quantity = items[index].quantity + quantity;
+      setItems([...items]);
     } else {
-      setItems([...items, {...item, quantity}]);
-    };
+      setItems([...items, { ...item, quantity }])
+    }
   };
 
   const removeItem = itemId => {

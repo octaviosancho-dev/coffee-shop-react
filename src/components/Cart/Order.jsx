@@ -33,7 +33,6 @@ const OrderForm = () => {
     date: actualDate,
     total: totalPrice
   }
-// console.log(initialState);
 
 const validForm = (arr) => {
   const buyerData = Object.values(arr.buyer);

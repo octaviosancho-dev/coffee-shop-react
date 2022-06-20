@@ -12,7 +12,7 @@ const Cart = () => {
 console.log(items);
   setTimeout(() => {
     setLoading(false);
-  }, 1500);
+  }, 2500);
 
   let acum = 0;
 
@@ -62,7 +62,7 @@ console.log(items);
             </div>}
           </div>
           {items.length !== 0 ? <div className='box d-flex w-100 justify-content-between align-items-center'>
-            <img src={cartMug} alt="cart" style={{width: '5vw', maxWidth: '125px'}}/>
+            <img src={cartMug} alt="cart" style={{width: '7vw', maxWidth: '120px'}}/>
             <h1 className='m-0 fs-3'>Total: $ {acum}</h1>
           </div> : null}
         </div>

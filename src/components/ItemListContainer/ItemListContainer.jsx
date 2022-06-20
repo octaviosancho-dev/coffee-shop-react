@@ -35,7 +35,7 @@ const ItemListContainer = () => {
 
       setTimeout(() => {
         setLoading(false);
-      }, 1000);
+      }, 3500);
     };
 
     getData(categoryid);

@@ -32,7 +32,7 @@ const ItemDetailContainer = () => {
 
     setTimeout(() => {
       isLoading(false);
-    }, 1000);
+    }, 3500);
     
   }, [id]);
   
