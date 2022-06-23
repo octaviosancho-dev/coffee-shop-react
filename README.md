@@ -5,6 +5,13 @@
 E-commerce orientado a la venta de café y productos relacionados. La Aplicación incluye un catalogo de productos, filtrado y un carrito de compras. Este proyecto ha sido realizado en ReactJS y está conectado a una base de datos en Google Firebase en el cual pueden ser registradas las compras por parte del usuario, tomando sus datos, los productos elegidos y su cantidad, brindando un codigo de orden de parte de la base de datos.
 
 ## Imágenes de la App
+![image](https://user-images.githubusercontent.com/90013852/175190609-17436e77-e49f-4a66-938d-10eb889689d3.png)
+![image](https://user-images.githubusercontent.com/90013852/175190676-9f81775d-1546-4465-bd6c-1df98682de59.png)
+![image](https://user-images.githubusercontent.com/90013852/175190705-a3cd6249-660b-4f10-8730-5950f71915a2.png)
+![image](https://user-images.githubusercontent.com/90013852/175190766-9921a7c0-a3be-4c08-817a-d95ec18da388.png)
+![image](https://user-images.githubusercontent.com/90013852/175190856-6d377d05-42a5-4a9c-8e58-400e9ce501d7.png)
+![image](https://user-images.githubusercontent.com/90013852/175190944-40859142-51cb-401f-ba28-e1570055cf83.png)
+![image](https://user-images.githubusercontent.com/90013852/175190975-ab3e37fc-1aea-4cc3-80d7-92c22078d68d.png)
 
 
 ## Tecnologías utilizadas
