@@ -14,4 +14,4 @@ E-commerce orientado a la venta de café y productos relacionados. La Aplicació
 ![image](https://user-images.githubusercontent.com/90013852/175190766-9921a7c0-a3be-4c08-817a-d95ec18da388.png)
 ![image](https://user-images.githubusercontent.com/90013852/175190856-6d377d05-42a5-4a9c-8e58-400e9ce501d7.png)
 ![image](https://user-images.githubusercontent.com/90013852/175190944-40859142-51cb-401f-ba28-e1570055cf83.png)
-![image](https://user-images.githubusercontent.com/90013852/175190975-ab3e37fc-1aea-4cc3-80d7-92c22078d68d.png)
+![Untitled](https://user-images.githubusercontent.com/90013852/175191326-7440df92-872c-42d3-b3bc-7d1d4deb8633.png)
