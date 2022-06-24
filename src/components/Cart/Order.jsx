@@ -13,6 +13,14 @@ const OrderForm = () => {
 
   const {items, clear} = useContext(ItemsContext);
 
+  const [client, setClient] = useState({
+    name: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    city: ''
+  });
+
   const pricePerProduct = items.map( item => {
     return item.quantity * item.price;
   })
@@ -21,24 +29,25 @@ const OrderForm = () => {
     return prev + curr;
   }, 0)
 
+  const { name, lastName, email, phone, city } = client;
+
   const initialState = {
     buyer: {
-      name: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      city: ''
+      name: name,
+      lastName: lastName,
+      email: email,
+      phone: phone,
+      city: city
     },
     items: [...items],
     date: actualDate,
     total: totalPrice
   }
 
-const validForm = (arr) => {
-  const buyerData = Object.values(arr.buyer);
-  return buyerData.some( item => item === '');
-}
-console.log(validForm(initialState));
+  const validForm = (clientData) => {
+    const buyerData = Object.values(clientData);
+    return buyerData.some( item => item === '');
+  }
 
   const [values, setValues] = useState(initialState);
   // Guardar ID de la orden
@@ -48,26 +57,28 @@ console.log(validForm(initialState));
 
   const handleOnChange = (e) => {
     const { value, name } = e.target;
-    setValues( {...values, buyer: {[name]: value}} ); //! cada vez que escribo en el input, me borra las keys anteriores
+    setClient({
+      ...client,
+      [name]: value
+    });
   };
 
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    if(validForm(values)) {
+    if(validForm(client)) {
       setError(true);
     } else {
       const docRef = await addDoc(collection(db, "orders"), {values});
   
       console.log("Document written with ID: ", docRef.id);
-  
+      console.log(initialState);
       setOrderID(docRef.id);
       setValues(initialState);
       setError(false);
       clear();
     };
   }
-  console.log(values);
   return (
     <Fragment>
       <div className='orderContainer'>
