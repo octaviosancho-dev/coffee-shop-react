@@ -69,10 +69,8 @@ const OrderForm = () => {
     if(validForm(client)) {
       setError(true);
     } else {
-      const docRef = await addDoc(collection(db, "orders"), {values});
+      const docRef = await addDoc(collection(db, "orders"), {initialState});
   
-      console.log("Document written with ID: ", docRef.id);
-      console.log(initialState);
       setOrderID(docRef.id);
       setValues(initialState);
       setError(false);

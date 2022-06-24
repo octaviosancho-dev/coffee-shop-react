@@ -9,7 +9,6 @@ const Cart = () => {
   const [loading, setLoading] = useState(true);
 
   const {items, removeItem} = useContext(ItemsContext);
-console.log(items);
   setTimeout(() => {
     setLoading(false);
   }, 2500);
