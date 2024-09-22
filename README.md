@@ -1,4 +1,4 @@
-# Coffee Shop (e-commerce) <a href="https://www.w3.org/react/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
+# Coffee Shop (e-commerce)
 
 ## Description
 
