@@ -5,9 +5,9 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='home--text'>
-        <h1>Todo comienza con un Café.</h1>
-        <p>Acceda a nuestra tienda y llevese los mejores productos!</p>
-        <Link to='/shop'><button className='buttons buttons--home'>Ver Tienda</button></Link>
+        <h1>Everything starts with a coffee.</h1>
+        <p>See our shop and get the best products!</p>
+        <Link to='/shop'><button className='buttons buttons--home'>Shop</button></Link>
       </div>
       <div className='home--image'>
       </div>

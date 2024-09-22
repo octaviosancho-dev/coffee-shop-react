@@ -39,7 +39,7 @@ const ItemCount = ({stock, initial, onAdd, item}) => {
             }}
             
             disabled={stock === 0 || count === 0 ? true : false}>
-            Agregar al carrito
+            Add to cart
           </button>
       </div>
     </div>

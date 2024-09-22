@@ -5,7 +5,7 @@ const SuccessMsg = ({orderID}) => {
   return (
     <div className='msgContainer'>
       <div className='successMsg'>
-        <h5>Gracias por su compra! Su número de Orden es: {orderID}</h5>
+        <h5>Thank you for your purchase! Your order number is: {orderID}</h5>
       </div>
       <div>
         <img src={Check} alt="check-icon" style={{width: 40, margin: 10}}/>

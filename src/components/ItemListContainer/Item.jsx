@@ -12,7 +12,7 @@ const Item = ({item}) => {
         className='buttons'
         type='button'
         >
-        Ver Detalle
+        See details
       </button>
     </div>
   );

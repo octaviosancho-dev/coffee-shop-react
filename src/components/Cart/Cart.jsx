@@ -11,7 +11,7 @@ const Cart = () => {
   const {items, removeItem} = useContext(ItemsContext);
   setTimeout(() => {
     setLoading(false);
-  }, 2500);
+  }, 1500);
 
   let acum = 0;
 
@@ -20,7 +20,7 @@ const Cart = () => {
       {loading ? (<Spinner/>) :
       <>
         <div className='itemContainer justify-content-start'>
-          <div><h1>Su Compra:</h1></div>
+          <div><h1>Your cart:</h1></div>
           <div className='boxCart'>
             {items.length !== 0 ?
             <div className='cartList'>
@@ -34,7 +34,7 @@ const Cart = () => {
                       {item.title}
                     </div>
                     <div className='text-nowrap text-muted'>
-                      Cantidad: {item.quantity}
+                      Quantity: {item.quantity}
                     </div>
                     <div className='text-nowrap' style={{color: "#0f7032"}}>
                       $ {pricePerProduct}
@@ -57,7 +57,7 @@ const Cart = () => {
             <div className='d-flex flex-column align-items-center my-auto gap-4 text-center'>
               <img src={cartMug} alt="cart" style={{width: '15vw', maxWidth: '125px'}}/>
               <h1 className='fs-1 sm: fs-5'>Tu Carrito está Vacío :(</h1>
-              <Link to='/shop'><button className='btn btn-outline-secondary m-3'>Volver a la Tienda</button></Link>
+              <Link to='/shop'><button className='btn btn-outline-secondary m-3'>Back to shop</button></Link>
             </div>}
           </div>
           {items.length !== 0 ? <div className='box d-flex w-100 justify-content-between align-items-center'>
@@ -65,7 +65,7 @@ const Cart = () => {
             <h1 className='m-0 fs-3'>Total: $ {acum}</h1>
           </div> : null}
         </div>
-        {items.length === 0 ? null : <div className='cartButton'><Link to='/order'><button className='buttons' style={{backgroundColor: '#198754'}}>Continuar Compra</button></Link></div>}
+        {items.length === 0 ? null : <div className='cartButton'><Link to='/order'><button className='buttons' style={{backgroundColor: '#198754'}}>Next</button></Link></div>}
         
       </>}
     </Fragment>

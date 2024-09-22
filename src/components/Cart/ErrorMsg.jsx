@@ -5,7 +5,7 @@ const SuccessMsg = () => {
   return (
     <div className='msgContainer'>
       <div className='errorMsg'>
-        <h5>Por favor, complete todos los campos</h5>
+        <h5>Please, complete all fields.</h5>
       </div>
       <div>
         <img src={Error} alt="error-icon" style={{width: 40, margin: 10}}/>

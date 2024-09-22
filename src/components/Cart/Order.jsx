@@ -81,7 +81,7 @@ const OrderForm = () => {
     <Fragment>
       <div className='orderContainer'>
         <div className='boxOrder'>
-          <h5>Ingrese sus datos para finalizar:</h5>
+          <h5>Enter your details to complete:</h5>
           <form className='orderForm' onSubmit={onSubmit}>
             <input
               placeholder='Nombre'
@@ -117,13 +117,13 @@ const OrderForm = () => {
             <button
               className='buttons mx-auto'
               disabled={totalPrice === 0 ? true : false}
-              >Comprar
+              >Buy
             </button>
           </form>
           {error === true && <ErrorMsg/>}
           {orderID && <SuccessMsg orderID={orderID}/>}
         </div>
-        {orderID && <Link to='/shop' className='mx-auto'><button className='btn btn-outline-secondary m-3'>Volver a la Tienda</button></Link>}
+        {orderID && <Link to='/shop' className='mx-auto'><button className='btn btn-outline-secondary m-3'>Back to shop</button></Link>}
       </div>
     </Fragment>
   );
